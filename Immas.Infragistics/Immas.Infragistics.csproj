@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4292FFF-E56F-4A61-809C-C92C327E994E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Immas.Infragistics</RootNamespace>
+    <AssemblyName>Immas.Infragistics</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Shared.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.DataVisualization.Shared.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraDataChart.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraGeographicMap.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Misc.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Portable.Core.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\BaseMdiChildForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\BaseMdiParentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\FormAuthCollection.cs" />
+    <Compile Include="BaseForm\FormAuthInfo.cs" />
+    <Compile Include="Controls\FormMenuBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FormMenuInfo.cs" />
+    <Compile Include="Controls\FormMenuInfoCollection.cs" />
+    <Compile Include="Controls\ImmasBizRuleManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ImmasRoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ImmasTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SampleGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialog\DialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\DialogForm.Designer.cs">
+      <DependentUpon>DialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\DialogHelper.cs" />
+    <Compile Include="Dialog\DialogType.cs" />
+    <Compile Include="ImmasGridSchema.cs" />
+    <Compile Include="CommonColorSet.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Extension\UltraGridRowExtension.cs" />
+    <Compile Include="ImmasGridDrawFilter.cs" />
+    <Compile Include="ImmasGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImmasGrid_ColumnSettings.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImmasGrid_Override.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImmasTabbedMdiManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Popup\FilterPopupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\FilterPopupForm.Designer.cs">
+      <DependentUpon>FilterPopupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\ComboBoxPopupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\ComboBoxPopupForm.Designer.cs">
+      <DependentUpon>ComboBoxPopupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\PopupHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseForm\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\BaseMdiParentForm.resx">
+      <DependentUpon>BaseMdiParentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\DialogForm.resx">
+      <DependentUpon>DialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImmasGrid.resx">
+      <DependentUpon>ImmasGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\FilterPopupForm.resx">
+      <DependentUpon>FilterPopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\ComboBoxPopupForm.resx">
+      <DependentUpon>ComboBoxPopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Font\AppleSDGothicNeoB.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Font\AppleSDGothicNeoL.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Font\AppleSDGothicNeoM.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\arrow_down_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_down_92.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_right_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_up_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asc_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_code_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_code_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox_false_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox_true_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_panel_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desc_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Immas.Common\Immas.Common.csproj">
+      <Project>{A6169C01-9C66-4F92-900A-04D648D7C1F1}</Project>
+      <Name>Immas.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Immas.DataAccess\Immas.DataAccess.csproj">
+      <Project>{21BD89E1-5D2F-41B8-A730-DE10CDF29E0E}</Project>
+      <Name>Immas.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\program.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

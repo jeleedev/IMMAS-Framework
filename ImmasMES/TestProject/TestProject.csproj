@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94E6CCE7-4873-4D16-B531-DD538D440E31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TestProject</RootNamespace>
+    <AssemblyName>TestProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Shared.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Misc.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v18.1, Version=18.1.20181.88, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SY0005.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SY0005.Designer.cs">
+      <DependentUpon>SY0005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\SY0005Dao.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Dao\SY0003Dao.cs" />
+    <Compile Include="Forms\SY0003.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SY0003.Designer.cs">
+      <DependentUpon>SY0003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\SY0002Dao.cs" />
+    <Compile Include="Dao\SY0001Dao.cs" />
+    <Compile Include="Forms\SY0002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SY0002.Designer.cs">
+      <DependentUpon>SY0002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SY0001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SY0001.Designer.cs">
+      <DependentUpon>SY0001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SY0004.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SY0004.Designer.cs">
+      <DependentUpon>SY0004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dao\SY0004Dao.cs" />
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SY0005.resx">
+      <DependentUpon>SY0005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\SY0001.resx">
+      <DependentUpon>SY0001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SY0003.resx">
+      <DependentUpon>SY0003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SY0002.resx">
+      <DependentUpon>SY0002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SY0004.resx">
+      <DependentUpon>SY0004.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Forms\SY0001_grdMaster.grd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Forms\SY0002_grdDetail.grd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Forms\SY0002_grdMaster.grd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Forms\SY0003_grdMaster.grd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Forms\SY0004_grdMaster.grd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Forms\SY0005_grdDetail.grd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Forms\SY0005_grdMaster.grd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GridSchemaEditor\GridSchemaEditor.csproj">
+      <Project>{a5b85550-cfb7-4810-83a7-f5e51ae97e9e}</Project>
+      <Name>GridSchemaEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Immas.Common\Immas.Common.csproj">
+      <Project>{A6169C01-9C66-4F92-900A-04D648D7C1F1}</Project>
+      <Name>Immas.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Immas.DataAccess\Immas.DataAccess.csproj">
+      <Project>{21bd89e1-5d2f-41b8-a730-de10cdf29e0e}</Project>
+      <Name>Immas.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Immas.Database.Sql\Immas.Database.Sql.csproj">
+      <Project>{a26f64d1-3f7c-490e-8f45-4e281b6664f3}</Project>
+      <Name>Immas.Database.Sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Immas.Database\Immas.Database.csproj">
+      <Project>{2b2ca5d0-0c55-405f-b8ee-9d714c302d4b}</Project>
+      <Name>Immas.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Immas.Infragistics\Immas.Infragistics.csproj">
+      <Project>{d4292fff-e56f-4a61-809c-c92c327e994e}</Project>
+      <Name>Immas.Infragistics</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Memo\TODO_지은.txt" />
+    <None Include="Resources\excel_32.png" />
+    <None Include="Resources\excel_16.png" />
+    <None Include="Resources\explorer_16.png" />
+    <None Include="Resources\explorer_32.png" />
+    <None Include="Resources\edit_16.png" />
+    <None Include="Resources\immasLogin1.jpg" />
+    <None Include="Resources\search_16.png" />
+    <None Include="Resources\save_16.png" />
+    <None Include="Resources\new_16.png" />
+    <None Include="Resources\delete_16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
